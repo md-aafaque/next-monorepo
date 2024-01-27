@@ -8,4 +8,4 @@ const courseSchema = new mongoose.Schema({
     published: Boolean
 });
 
-export const Course = mongoose.model('Course', courseSchema);
+export const Course = mongoose.models.Course || mongoose.model('Course', courseSchema);
