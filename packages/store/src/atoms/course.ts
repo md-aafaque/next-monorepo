@@ -1,12 +1,5 @@
 import {atom} from "recoil";
-
-export interface Course {
-  _id: number,
-  title: string,
-  description: string,
-  price: number,
-  imageLink: string
-}
+import { Course } from "../../../types/src/course";
 
 export const courseState = atom<{
   isLoading: boolean,
