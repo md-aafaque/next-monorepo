@@ -1,5 +1,5 @@
 export interface UserType {
-    userEmail: string;
+    email: string;
     password: string;
     purchasedCourses: [];
 }

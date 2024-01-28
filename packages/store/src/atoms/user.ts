@@ -2,11 +2,11 @@ import {atom} from "recoil";
 
 export const userState = atom<{
   isLoading: boolean,
-  userEmail: null | string
+  email: null | string
 }> ({
   key: 'userState',
   default: {
     isLoading: true,
-    userEmail: null
+    email: null
   },
 });

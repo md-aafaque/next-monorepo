@@ -24,22 +24,22 @@ const InitUser = () => {
                 }
             })
 
-            if (response.data.username) {
+            if (response.data.email) {
                 setUser({
                     isLoading: false,
-                    userEmail: response.data.username
+                    email: response.data.email
                 })
             } else {
                 setUser({
                     isLoading: false,
-                    userEmail: null
+                    email: null
                 })
             }
         } catch (e) {
 
             setUser({
                 isLoading: false,
-                userEmail: null
+                email: null
             })
         }
     };
